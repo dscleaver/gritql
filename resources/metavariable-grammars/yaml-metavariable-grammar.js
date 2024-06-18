@@ -459,7 +459,7 @@ module.exports = grammar({
     _hidden_r_sgl_pln_blk: $ => choice($._r_sgl_pln_nul_blk, $._r_sgl_pln_bol_blk, $._r_sgl_pln_int_blk, $._r_sgl_pln_flt_blk, $._r_sgl_pln_str_blk, $.grit_metavariable),
     _hidden_br_sgl_pln_blk: $ => choice($._br_sgl_pln_nul_blk, $._br_sgl_pln_bol_blk, $._br_sgl_pln_int_blk, $._br_sgl_pln_flt_blk, $._br_sgl_pln_str_blk),
     _hidden_b_sgl_pln_blk: $ => choice($._b_sgl_pln_nul_blk, $._b_sgl_pln_bol_blk, $._b_sgl_pln_int_blk, $._b_sgl_pln_flt_blk, $._b_sgl_pln_str_blk),
-    _hidden_r_sgl_pln_flw: $ => choice($._r_sgl_pln_nul_flw, $._r_sgl_pln_bol_flw, $._r_sgl_pln_int_flw, $._r_sgl_pln_flt_flw, $._r_sgl_pln_str_flw),
+    _hidden_r_sgl_pln_flw: $ => choice($._r_sgl_pln_nul_flw, $._r_sgl_pln_bol_flw, $._r_sgl_pln_int_flw, $._r_sgl_pln_flt_flw, $._r_sgl_pln_str_flw, $.grit_metavariable),
     _hidden_br_sgl_pln_flw: $ => choice($._br_sgl_pln_nul_flw, $._br_sgl_pln_bol_flw, $._br_sgl_pln_int_flw, $._br_sgl_pln_flt_flw, $._br_sgl_pln_str_flw),
 
     _hidden_r_mtl_pln_blk: $ => $._r_mtl_pln_str_blk,
